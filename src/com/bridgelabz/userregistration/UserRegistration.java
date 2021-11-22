@@ -4,14 +4,14 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- * User Need to Enter Valid Last Name
+ * User Need to Enter Valid Email
  */
 
 public class UserRegistration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter last Name : ");
-        String lastName = scanner.next();
-        System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
+        String email = "abc.xyz@bl.co.in";
+        System.out.println("Email : " + email);
+        System.out.println(Pattern.matches("^(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
     }
 }
