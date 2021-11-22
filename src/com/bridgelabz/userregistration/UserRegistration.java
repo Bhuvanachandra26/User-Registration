@@ -4,14 +4,14 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- * User Need to Enter Valid Email
+ * User need to follow pre-defined Mobile Format
  */
 
 public class UserRegistration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String email = "abc.xyz@bl.co.in";
-        System.out.println("Email : " + email);
-        System.out.println(Pattern.matches("^(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
+        System.out.println("Enter mobile no. : ");
+        String phNum = scanner.nextLine();
+        System.out.println(Pattern.matches("[0-9]{2}[\\s][0-9]{10}", phNum));
     }
 }
