@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 /**
  * User need to follow pre-defined Password Rules.
- * Rule-2 : Should have atLeast 1 Upper Case.
+ * Rule-3 : Should have at least 1 numeric number in the password.
  */
 
 public class UserRegistration {
@@ -13,6 +13,6 @@ public class UserRegistration {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter password : ");
         String password = scanner.next();
-        System.out.println(Pattern.matches("^(?=.*[A-Z]).{8,}$", password));
+        System.out.println(Pattern.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,}$", password));
     }
 }
