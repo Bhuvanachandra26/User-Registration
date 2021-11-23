@@ -10,8 +10,8 @@ import java.util.regex.Pattern;
 public class UserRegistration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String email = "abc.xyz@bl.co.in";
+        String email = "abc.bhuvan@gmail.com.in";
         System.out.println("Email : " + email);
-        System.out.println(Pattern.matches("^(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$", email));
+        System.out.println(Pattern.matches("^(abc)[.][a-z]+[@](gmail)[.](com)[.][a-z]+$", email));
     }
 }
