@@ -10,7 +10,8 @@ public class UserRegistrationRegex {
     private static final String EMAIL = "^(abc)[.][a-z]+[@](bl)[.](co)[.][a-z]+$";
     private static final String PHONE_NUMBER = "^[\\d]{2}[\\s][\\d]{10}$";
     private static final String PASSWORD = "^(?=.*[A-Z])(?=.*[a-z])(?=[^!@#$%^&+=]*[!@#$%^&+=][^!@#$%^&+=]*$)(?=.*[0-9]).{8,}$";
-
+    
+    public static void main(String[] args) {
     UserRegistrationInterface firstNameValidate = fName -> {
         boolean result = Pattern.matches(NAME, fName);
         if (result){
@@ -55,4 +56,5 @@ public class UserRegistrationRegex {
             throw new InvalidUserInputException(InvalidUserInputException.ExceptionType.INVALID_PASSWORD,"Invalid Password");
         }
     };
+}
 }
