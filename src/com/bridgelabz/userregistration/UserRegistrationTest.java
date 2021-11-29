@@ -67,7 +67,7 @@ public class UserRegistrationTest {
     public void givenEmail_whenNotProper_ShouldReturnFalse() {
     	UserRegistrationRegex userRegistrationRegEx = new UserRegistrationRegex();
         try {
-            boolean result = userRegistrationRegEx.emailValidate.userEntries("abc.xyz@bl.in");
+            boolean result = userRegistrationRegEx.emailValidate.userEntries("abc.bbc@bl.in");
             Assert.assertFalse(result);
         }catch (InvalidUserInputException e){
             System.out.println(e);
